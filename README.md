@@ -14,7 +14,7 @@ make
 ### ./manifest/Makefile
 1. `GOOD`：在淘宝搜索的关键词；  
 2. `CONDITION`：商品名称中的关键字，用于过滤商品；  
-3. `SCKEY`：方糖关联的`SCKEY`，推送信息。
+3. `SCKEY`：方糖关联的`SCKEY`，推送信息；
 4. 价格阈值：在`chk1`和`chk2` targets中通过修改`CHK`字段的值实现，当所关注的商品价格小于`CHK`的字段，即进行消息推送。
 默认，只运行`chk1`和`chk2`，容器启动的命令可以通过修改`./manifests/cronjob.yaml.sed`中的`.spec.spec.cotainers.commnad`字段实现。
 
