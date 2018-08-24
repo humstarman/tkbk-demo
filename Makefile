@@ -4,7 +4,7 @@ DOCKER_REGISTRY=10.254.0.50:5000
 TAG=v1
 IMAGE=${DOCKER_REGISTRY}/${NAME}:${TAG}
 IMAGE_PULL_POLICY=Always
-SCHEDULE=* */1 * * *
+SCHEDULE=4 */1 * * *
 
 all: build push deploy
 
