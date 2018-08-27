@@ -8,7 +8,7 @@ make
 ## Set the parameters
 ### ./Makefile:
 1. `NAME`：避免此demo在同一Kubernetes平台运行因为重名而导致失败，需要修改该字段；  
-2. `SCHEDULE`：默认是"4 \*/1 \* \* \*"，为每小时的第四分钟启动项目，可以依需求修改；  
+2. `SCHEDULE`：默认是"4 \*/1 \* \* \*"，为每小时的第四分钟启动项目，可以依需求修改,将'4'也换成其它数；  
 其余参数，如非必要无需修改。
 
 ### ./manifest/Makefile
