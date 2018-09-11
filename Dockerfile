@@ -7,7 +7,7 @@ RUN pip install -r /tmp/requirements.txt
 RUN apt-get clean && \ 
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/* /usr/share/man /usr/share/doc 
-RUN mkdir /workspace
+RUN mkdir -p /workspace
 WORKDIR /workspace
 ADD ./manifest /workspace/
 ADD ./scripts /workspace/scripts/
