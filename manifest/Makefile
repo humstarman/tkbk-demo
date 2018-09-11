@@ -36,6 +36,6 @@ cat:
 md:
 	@cat ${MD}
 
-chk:
+chk: get
 	@./scripts/chk.sh -p ${CHK} -f ${LOG}
 
